@@ -1,2 +1,5 @@
 # sozlukkaristir.com
-Sözlük Karıştır | Veritabanımız içerisindeki 81 binden fazla kelime ile kelime haznenizi geliştirebilir, online bir şekilde sözlük karıştırabilirsiniz!
+
+Kelime dağarcığını geliştirmeye yönelik, basit HTML projesi.
+
+sozlukkaristir.com alan adı 25 Mart 2021 de sona erecektir, tekrar kayıt etmeyeceğim isteyen birebir dosyaları alıp kullanabilir veya geliştirebilir.
