@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--- Veri tipi --->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <!--- Title --->
+    <title>Sözlük Karıştır</title>
+    <!--- Short icon --->
+    <link rel="shortcut icon" href="/veri/logo.png" />
+    <!--- Anahtar kelimeler --->
+    <meta
+      name="keywords"
+      content="Sözlük Karıştır ,Sözlük,Sozluk,Sozluk Karistir"
+    />
+    <!--- Açıklama --->
+    <meta
+      name="description"
+      content="Sözlük Karıştır | Veritabanımız içerisindeki 81 binden fazla kelime ile kelime haznenizi geliştirebilir, online bir şekilde sözlük karıştırabilirsiniz!"
+    />
+    <!--- Mobil --->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--- Değişen title --->
+    <script type="text/javascript">
+      var title = document.title;
+      var alttitle = "Sözlük sayfaları hâlâ açık! | Sözlük Karıştır";
+      window.onblur = function() {
+        document.title = alttitle;
+      };
+      window.onfocus = function() {
+        document.title = title;
+      };
+    </script>
+    <!--- Font --->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!--- Css çekim --->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--- Çerez uyarısı --->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="https://oguzturk.net/lab/demo/cerez/cerez.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://oguzturk.net/lab/demo/cerez/cerez.js"
+    ></script>
+    <script>
+      window.addEventListener("load", function() {
+        window.cookieconsent.initialise({
+          palette: {
+            popup: {
+              background: "#646478", // şerit arkaplan rengi
+              text: "#ffffff" // şerit üzerindeki yazı rengi
+            },
+            button: {
+              background: "#8ec760", // buton arkaplan rengi - "transparent" kullanıp border açabilirsiniz.
+              //"border": "#14a7d0", arkaplan rengini transparent yapıp çerçeve kullanabilirsini
+              text: "#ffffff" // buton yazı rengi
+            }
+          },
+          theme: "classic", // kullanabileceğiniz temalar block, edgeless, classic
+          // "type": "opt-out", gizle uyarısını aktif etmek için
+          // "position": "top", aktif ederseniz uyarı üst kısımda görünür
+          // "position": "top", "static": true, aktif ederseniz uyarı üst kısımda sabit olarak görünür
+          // "position": "bottom-left", aktif ederseniz uyarı solda görünür
+          //"position": "bottom-right", aktif ederseniz uyarı sağda görünür
+          content: {
+            message:
+              "Sitemizden en iyi şekilde faydalanabilmeniz için mevzuata uygun bir şekilde tarayıcı çerezleri kullanılmaktadır. Bu siteyi kullanarak çerez kullanımını kabul etmiş sayılıyorsunuz.",
+            dismiss: "ANLADIM",
+            link: "Veri kullanım politikası",
+            href: "/çerezpolitikasıkonum"
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!--- Bilgi düğmessi --->
+    <input
+      type="image"
+      align="right"
+      src="/veri/bilgi-logo.png"
+      id="bilgi-popup"
+      class="bilgi-logo"
+    />
+    <label>Bilgi </label>
+    <style>
+      label {
+        display: block;
+        width: x;
+        height: y;
+        text-align: right;
+      }
+    </style>
+    <style>
+      .bilgi-logo {
+        width: 100%;
+        max-width: 40px;
+        height: auto;
+      }
+    </style>
+    <script type="text/javascript">
+      var btnSelam = document.getElementById("bilgi-popup");
+      btnSelam.onclick = function() {
+        $(document).ready(function() {
+          $("#modalNesne").modal("show");
+        });
+      };
+    </script>
+    <div id="modalNesne" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              &times;
+            </button>
+            <h4 class="modal-title">Bilgi</h4>
+          </div>
+          <div class="modal-body">
+            <h4>Hakkında:</h4>
+            <p>...</p>
+            <h4>İletişim:</h4>
+            <p>...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <center>
+      <!--- Sayfayı yenileme kodu --->
+      <a href="/" class="yenile" style="background-color:#9a4ef1"
+        >Yeni Kelime</a
+      >
+      <style>
+        a.yenile {
+          display: inline-block;
+          padding: 0.3em 1.2em;
+          margin: 0 0.1em 0.1em0;
+          border: 0.16em solid rgba(255, 255, 255, 0);
+          border-radius: 2em;
+          box-sizing: border-box;
+          text-decoration: none;
+          font-family: "Roboto", sans-serif;
+          font-weight: 300;
+          color: white;
+          text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+          text-align: center;
+          transition: all 0.2s;
+          margin: 5px;
+        }
+        a.yenile:hover {
+          border-color: rgba(255, 255, 255, 1);
+        }
+        @media all and (maxwidth: 30em) {
+          a.yenile {
+            display: block;
+            margin: 0.2em auto;
+          }
+        }
+      </style>
+      <!--- Rasgele kelime çıktısı --->
+      <div id="sozlukkaristir">
+	  <script>
+var greetings = [
+deneme"
+];
+var greeting_id = Math.floor(Math.random() * greetings.length);
+document.getElementById('title').innerHTML = greetings[greeting_id];
+	  </script>
+        <p>
+          <font face="tahoma" size="6" color="maroon"><b></b></font>
+        </p>
+        <!--- Kelimenin anlamı --->
+        <a
+          href="https://sozluk.gov.tr/?kelime=kelime"
+          target="_blank"
+          class="kelime_anlam"
+          style="background-color:#9a4ef1"
+          >Kelimenin anlamı (TDK)</a
+        >
+        <a
+          href="https://www.google.com.tr/search?safe=active&client=opera&hs=GZ6&sxsrf=ALeKk00k-l9wcSUr94u6uTLXCtQoxDdleQ%3A1584973065349&ei=CcV4Xsv6FK-q1fAPt-uW0A4&q=Sözlük&oq=Sözlük&gs_l=psy-ab.3..35i39l3j0i7i30l5j0i67j0i7i30.3564.3564..3762...0.2..0.157.157.0j1......0....1..gws-wiz.......0i71.b-XPqOWlpzQ&ved=0ahUKEwiLo6fk5LDoAhUvVRUIHbe1BeoQ4dUDCAo&uact=5#dobs=kelime"
+          target="_blank"
+          class="kelime_anlam"
+          style="background-color:#9a4ef1"
+          >Kelimenin anlamı (Google)</a
+        >
+        <a
+          href="https://tr.wiktionary.org/wiki/kelime"
+          target="_blank"
+          class="kelime_anlam"
+          style="background-color:#9a4ef1"
+          >Kelimenin anlamı (Wikipedia)</a
+        >
+        <style>
+          a.kelime_anlam {
+            display: inline-block;
+            padding: 0.3em 1.2em;
+            margin: 0 0.1em 0.1em0;
+            border: 0.16em solid rgba(255, 255, 255, 0);
+            border-radius: 2em;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            color: white;
+            text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+            text-align: center;
+            transition: all 0.2s;
+            margin: 5px;
+          }
+          a.kelime_anlam:hover {
+            border-color: rgba(255, 255, 255, 1);
+          }
+          @media all and (maxwidth: 30em) {
+            a.kelime_anlam {
+              display: block;
+              margin: 0.2em auto;
+            }
+          }
+        </style>
+      </div>
+    </center>
+  </body>
+</html>
