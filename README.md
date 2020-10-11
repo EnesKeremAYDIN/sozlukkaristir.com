@@ -1,4 +1,4 @@
-# sozlukkaristir.com
+# https://sozlukkaristir.com // https://eneskeremaydin.github.io/sozlukkaristir.com
 
 Kelime dağarcığını geliştirmeye yönelik, basit HTML projesi.
 
